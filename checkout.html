@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Food Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="https://naveenkumar2313.github.io/sonish-team/index.html">Home</a></li>
+                <li><a href="https://naveenkumar2313.github.io/sonish-team/index.html">Menu</a></li>
+                <li><a href="https://naveenkumar2313.github.io/sonish-team/cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="https://naveenkumar2313.github.io/sonish-team/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="checkout">
+            <h2>Bill</h2>
+            <table id="bill-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bill items will be inserted here by JavaScript -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Grand Total</td>
+                        <td id="grand-total">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button onclick="confirmOrder()">Confirm Order</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Ordering Website</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
